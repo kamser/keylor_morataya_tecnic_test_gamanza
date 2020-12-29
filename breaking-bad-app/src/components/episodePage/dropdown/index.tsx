@@ -38,8 +38,11 @@ const DropdownSection = () => {
 
     return(
         <div>
+            <Typography variant='h5'>
+                FILTER
+            </Typography>
             <FormControl variant="filled" className={classes.formControl}>
-                <InputLabel htmlFor="filled-age-native-simple">Age</InputLabel>
+                <InputLabel htmlFor="filled-age-native-simple">Seasons</InputLabel>
                 <Select
                     native
                     value={10}
@@ -49,9 +52,11 @@ const DropdownSection = () => {
                     }}
                     >
                     <option aria-label="None" value="" />
-                    <option value={10}>Ten</option>
-                    <option value={20}>Twenty</option>
-                    <option value={30}>Thirty</option>
+                    <option value={1}>First season</option>
+                    <option value={2}>Second season</option>
+                    <option value={3}>Thirt season</option>
+                    <option value={4}>Fourth season</option>
+                    <option value={5}>Fifth season</option>
                 </Select>
             </FormControl>
 
